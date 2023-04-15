@@ -1,0 +1,59 @@
+export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2; exit;}'):0.0;
+
+hcsdiag list
+cat hey.txt | clip.exe
+
+cat /etc/os-release | grep -i name
+cat /etc/os-release | grep -i -E "name|version"
+cat /etc/os-release | grep -i -e"name" -e"version"
+more /etc/os-release
+lsb_release -a
+more lsb-release
+uname -r
+ctrl+z; bg [detach from terminal]
+ip addr show eth0
+
+ZSH
+autoload -Uz zsh-newuser-install
+zsh-newuser-install -f
+
+sudo adduser userNameHere
+id envy
+chage envy -l
+usermod -aG 4,20,24,25,27,29,30,44,46,117 envy
+echo "[user]
+default=YOUR_USERNAME" >> /etc/wsl.conf
+
+file [filename] - details
+wslpath 'e:\Desktop' [from WSL to Windows]
+cp gcc-arm-none-eabi-5_2-2015q4  /mnt/e/Desktop -r
+scp [filename] [uname]@[ipaddress]
+scp a.out gary@192.168.1.7:.
+pwd   =>present working directory
+echo $0
+df -h [drives]
+ls -l
+ls -lh [condensed]
+chmod [0rwx0rwx0rwx] read, write and exec permissions
+neofetch for sys info
+screenfetch
+ps [processes]
+ps aux
+top
+htop
+tar xjf ns-allinone-3.30.1.tar.bz2
+free -h
+apt list --upgradable
+ls -la /usr/bin/ | grep g++   [check links]
+sudo ln -s /usr/bin/g++-8 /usr/bin/g++
+make CC=gcc [make using gcc as CC]
+make TARGET=z1/zoul/sky/native
+make clean
+make distclean
+sudo mkdir /mnt/f
+sudo mount -t drvfs G: /mnt/g
+update-alternatives --config java
+toilet -f mono12 -F metal Charan
+sudo apt install cmatrix
+sudo apt install fortune-mod
+wc [filename] -word count
